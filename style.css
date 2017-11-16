@@ -1,0 +1,54 @@
+*{box-sizing: border-box;
+}
+
+
+body{
+  margin:0;
+    background: grey;
+}
+
+h1{
+  margin-bottom: 15px;
+}
+.contenedor{
+
+  padding-bottom: 20px;
+
+}
+
+ul{
+  list-style: none;
+  background: green;
+  margin:0;
+
+}
+.amarillo{
+  background: yellow;
+  padding-top: 10px;
+}
+
+.grisoscuro{
+  background: rgb(86, 85, 89);
+
+}
+
+
+@media all and (min-width:480px){
+.contenedor{
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+}
+ul{
+display:flex;
+flex-direction: column;
+width: 33.33333333%;
+flex-shrink: 0;
+margin-right: 30px;
+}
+.juntos{
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+}
+}
